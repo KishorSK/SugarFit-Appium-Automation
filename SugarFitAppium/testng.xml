@@ -1,0 +1,14 @@
+<suite name="SugarFit Suite">
+
+    <listeners>
+        <listener class-name="com.sugarfit.listeners.ExtentListener"/>
+    </listeners>
+
+    <test name="Assignment Tests">
+        <classes>
+            <class name="com.sugarfit.tests.LaunchAppTest"/>
+            <class name="com.sugarfit.tests.Logintest"/>
+            <class name="com.sugarfit.tests.MealLogtest"/>
+        </classes>
+    </test>
+</suite>
