@@ -67,10 +67,15 @@ This modular design makes the framework scalable and easy to maintain as new tes
 ## During the implementation of the automation framework, the following challenges were encountered:
 
 1.Initial Appium and Java environment setup and dependency compatibility.
+
 2.Dynamic UI elements whose locators changed between sessions.
+
 3.Optional permission dialogs and promotional popups that appeared only for certain user accounts.(for new number)
+
 4.Some application overlays (such as promotional banners) were not fully inspectable using Appium Inspector, making locator identification difficult. (gold membership)
+
 5.Certain elements took significantly longer to become interactable through Appium compared to manual interaction, requiring optimization of waits and locator strategies. (taking more than 40sec for closing banner, add icon, food, log manually & prebreakfast )
+
 6.Attaching failure screenshots correctly in Extent Reports required additional configuration.
 
 These challenges were resolved by improving locator strategies, introducing reusable popup handling methods, using explicit waits, and refining the reporting mechanism.
@@ -79,9 +84,14 @@ These challenges were resolved by improving locator strategies, introducing reus
 
 Given additional time, the framework could be further enhanced by implementing the following:
 
-Data-driven testing using Excel or JSON files.
-Integration with Jenkins/GitHub Actions for Continuous Integration (CI).
-Performance monitoring for CPU usage, memory consumption, battery usage, and network statistics.
-Retry mechanism for flaky tests.
-Video recording of test execution.
-More comprehensive test coverage including negative scenarios, edge cases, and regression suite
+1.Data-driven testing using Excel or JSON files.
+
+2.Integration with Jenkins/GitHub Actions for Continuous Integration (CI).
+
+3.Performance monitoring for CPU usage, memory consumption, battery usage, and network statistics.
+
+4.Retry mechanism for flaky tests.
+
+5.Video recording of test execution.
+
+6.More comprehensive test coverage including negative scenarios, edge cases, and regression suite
