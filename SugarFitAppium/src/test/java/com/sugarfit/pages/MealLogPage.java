@@ -59,29 +59,26 @@ public class MealLogPage {
     }
 
     public void clickAddIcon() {
-        waitUtils.waitForElement(addIcon).click();
-        waitUtils.waitForElement(foodButton);
+        driver.findElement(addIcon).click();
     }
 
     public void clickFood() {
-        waitUtils.waitForClickable(foodButton).click();
-        waitUtils.waitForElement(logManuallyButton);
-}
-
+        driver.findElement(foodButton).click();
+        
+    }
     public void clickLogManually() {
-        waitUtils.waitForElement(logManuallyButton).click();
-        waitUtils.waitForElement(preBreakfast);
+       driver.findElement(logManuallyButton).click();
     }
 
     public void selectPreBreakfast() {
         waitUtils.waitForElement(preBreakfast).click();
-        waitUtils.waitForElement(searchField);
+       
         
     }
 
     public void clickSearchField() {
         waitUtils.waitForElement(searchField).click();
-        waitUtils.waitForElement(firstSuggestion);
+        
     }
 
     public void addFirstFood() {

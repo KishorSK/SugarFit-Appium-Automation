@@ -27,6 +27,7 @@ public class DriverFactory {
         options.setAppPackage(prop.getProperty("appPackage"));
         options.setAppActivity(prop.getProperty("appActivity"));
 
+
         driver = new AndroidDriver(
                 new URL(prop.getProperty("appiumServer")),
                 options);
