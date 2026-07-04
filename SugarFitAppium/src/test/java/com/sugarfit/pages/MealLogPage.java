@@ -72,7 +72,6 @@ public class MealLogPage {
 
     public void selectPreBreakfast() {
         waitUtils.waitForElement(preBreakfast).click();
-       
         
     }
 
@@ -92,7 +91,7 @@ public class MealLogPage {
    public void clickLogButton() {
 
     waitUtils.waitForClickable(logButton).click();
-}
+    }
 
     public boolean isMealLoggedSuccessfully() {
         return waitUtils.waitForElement(mealSummaryButton).isDisplayed();
@@ -102,14 +101,14 @@ public class MealLogPage {
 
     waitUtils.waitForElement(addToPreBreakfastButton).click();
     waitUtils.waitForElement(logButton);
-}
-public void selectFirstSearchResult() {
+    }
+    public void selectFirstSearchResult() {
 
-    waitUtils.waitForElement(firstSearchResult).click();
-}
-public void searchFood(String foodName) {
+        waitUtils.waitForElement(firstSearchResult).click();
+    }
+    public void searchFood(String foodName) {
 
-    WebElement search = waitUtils.waitForElement(searchField);
-    search.sendKeys(foodName);
-}
+        WebElement search = waitUtils.waitForElement(searchField);
+        search.sendKeys(foodName);
+    }
 }

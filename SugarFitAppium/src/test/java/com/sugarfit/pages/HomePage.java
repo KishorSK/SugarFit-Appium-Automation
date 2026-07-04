@@ -43,13 +43,13 @@ public class HomePage {
     /**
      * Click popup if present.
      */
-private boolean clickIfPresent(By locator) {
+    private boolean clickIfPresent(By locator) {
 
-    try {
+         try {
 
-        List<WebElement> elements = driver.findElements(locator);
+               List<WebElement> elements = driver.findElements(locator);
 
-        if (!elements.isEmpty()) {
+            if (!elements.isEmpty()) {
 
             WebElement element = elements.get(0);
 
@@ -65,8 +65,7 @@ private boolean clickIfPresent(By locator) {
             }
         }
 
-    } catch (Exception e) {
-
+         } catch (Exception e) {
     }
 
     return false;
@@ -75,17 +74,17 @@ private boolean clickIfPresent(By locator) {
     /**
      * Handles all optional popups after login.
      */
-public void handleOptionalPopups() {
+    public void handleOptionalPopups() {
 
-    for (int i = 0; i < 8; i++) {
+         for (int i = 0; i < 8; i++) {
 
-        clickIfPresent(permissionDenyButton);
+             clickIfPresent(permissionDenyButton);
 
-        clickIfPresent(remindMeLaterButton);
+             clickIfPresent(remindMeLaterButton);
 
-        clickIfPresent(noThanksButton);
+             clickIfPresent(noThanksButton);
 
-        clickIfPresent(bannerCloseButton);
+             clickIfPresent(bannerCloseButton);
 
         if (isHomePageDisplayed()) {
             break;

@@ -38,25 +38,25 @@ public class LoginPage {
 
     // Actions
 
-public void enterPhoneNumber(String mobileNumber) {
+    public void enterPhoneNumber(String mobileNumber) {
 
-    WebElement element = waitUtils.waitForElement(phoneNumberField);
+        WebElement element = waitUtils.waitForElement(phoneNumberField);
 
-    // System.out.println("Displayed : " + element.isDisplayed());
-    // System.out.println("Enabled   : " + element.isEnabled());
+        // System.out.println("Displayed : " + element.isDisplayed());
+        // System.out.println("Enabled   : " + element.isEnabled());
 
-    element.click();
+        element.click();
 
-    waitUtils.waitForElement(AppiumBy.className("android.widget.EditText"));
+        waitUtils.waitForElement(AppiumBy.className("android.widget.EditText"));
 
-    WebElement input = waitUtils.waitForElement(
-            AppiumBy.className("android.widget.EditText")
-    );
+        WebElement input = waitUtils.waitForElement(
+                AppiumBy.className("android.widget.EditText")
+        );
 
-    input.clear();
-    input.sendKeys(mobileNumber);
+        input.clear();
+        input.sendKeys(mobileNumber);
 
-}
+    }
     public void clickSendVerificationCode() {
 
         waitUtils.waitForElement(sendVerificationButton)
@@ -79,20 +79,20 @@ public void enterPhoneNumber(String mobileNumber) {
     }
 
     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-}
+    }
 
-public boolean isLoginScreenDisplayed() {
+    public boolean isLoginScreenDisplayed() {
 
-    return waitUtils.waitForElement(loginScreenText).isDisplayed();
-}
-public long getAppLaunchTime() {
+        return waitUtils.waitForElement(loginScreenText).isDisplayed();
+    }
+    public long getAppLaunchTime() {
 
-    long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
 
-    waitUtils.waitForElement(loginScreenText);
+        waitUtils.waitForElement(loginScreenText);
 
-    long endTime = System.currentTimeMillis();
+        long endTime = System.currentTimeMillis();
 
-    return endTime - startTime;
-}
+        return endTime - startTime;
+    }
 }

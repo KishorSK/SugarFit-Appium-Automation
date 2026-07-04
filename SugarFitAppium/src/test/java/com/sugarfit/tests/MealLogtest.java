@@ -24,5 +24,5 @@ public class MealLogtest extends BaseTest{
             "Meal was not logged successfully.");
 
     System.out.println("Meal logged successfully.");
-}
+    }
 }

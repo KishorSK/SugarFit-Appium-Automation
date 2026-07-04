@@ -23,11 +23,11 @@ public class WaitUtils {
 
     return wait.until(
             ExpectedConditions.visibilityOfElementLocated(locator));
-}
+    }
 
-public WebElement waitForClickable(By locator) {
+    public WebElement waitForClickable(By locator) {
 
-    return wait.until(
-            ExpectedConditions.visibilityOfElementLocated(locator));
-}
+        return wait.until(
+                ExpectedConditions.visibilityOfElementLocated(locator));
+    }
 }

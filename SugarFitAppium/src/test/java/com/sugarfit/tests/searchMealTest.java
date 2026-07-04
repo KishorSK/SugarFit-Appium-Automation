@@ -33,4 +33,4 @@ public class searchMealTest extends BaseTest {
 
         System.out.println("Meal logged successfully.");
     }
-    }
+}
